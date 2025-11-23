@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市诗歌朗诵夜 · Poetry Reading Night</title>
+    <style>
+        .page {
+            display: inline-block;
+            background-color: #FFF6D9; /* 奶油米黄 */
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+            padding: 20px;
+            margin: 20px auto;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        /* 并集选择器 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #8B4513;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #DAA520;
+            padding-bottom: 10px;
+        }
+        
+        /* ID选择器 */
+        p#intro {
+            font-weight: bold;
+            color: #B8860B;
+            font-size: 1.1em;
+        }
+        
+        /* 后代选择器 */
+        div table a {
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: bold;
+        }
+        
+        /* 链接伪类 */
+        a:link {
+            color: #8B4513;
+        }
+        
+        a:visited {
+            color: #A0522D;
+        }
+        
+        a:hover {
+            color: #D2691E;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: #CD853F;
+        }
+        
+        /* 带类名的链接 */
+        a.red {
+            color: #B22222;
+            font-weight: bold;
+        }
+        
+        a.blue {
+            color: #1E90FF;
+            font-weight: bold;
+        }
+        
+        /* 伪元素 */
+        p::first-letter {
+            font-size: 1.5em;
+            color: #8B4513;
+            font-weight: bold;
+        }
+        
+        div.notice::first-line {
+            font-weight: bold;
+            color: #8B4513;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            border: 1px solid #DAA520;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #FFF0C9;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #FFF8E1;
+        }
+        
+        div.notice {
+            background-color: #FFF0C9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 顶部标题区 -->
+        <div>
+            <h1>城市诗歌朗诵夜 · Poetry Reading Night</h1>
+        </div>
+        
+        <!-- 活动介绍区 -->
+        <div>
+            <h2 id="intro">活动介绍</h2>
+            <p>在这个喧嚣的城市中，诗歌是我们心灵的栖息地。城市诗歌朗诵夜旨在为所有热爱诗歌的朋友们提供一个分享与交流的平台。无论您是诗歌创作的新手，还是朗诵的爱好者，这里都欢迎您的加入。</p>
+            <p>我们每月举办一次诗歌朗诵会，让参与者在温馨的氛围中分享自己喜爱的诗歌作品。正如李白在《将进酒》中所写："人生得意须尽欢，莫使金樽空对月。"诗歌能够让我们在忙碌的生活中，找到片刻的宁静与美好。</p>
+            <p>除了朗诵环节，我们还会不定期邀请专业诗人举办创作讲座，帮助大家提升诗歌鉴赏与创作能力。在这里，您不仅能欣赏到优美的诗篇，还能结识志同道合的朋友。</p>
+            <p id="intro">重要提示：首次参加活动的朋友请提前15分钟到场，我们将为您简要介绍活动流程。</p>
+        </div>
+        
+        <!-- 活动报名信息表格区 -->
+        <div>
+            <h3>近期活动安排</h3>
+            <table>
+                <tr>
+                    <th>日期</th>
+                    <th>时间</th>
+                    <th>地点</th>
+                    <th>主题</th>
+                    <th>已报名人数</th>
+                </tr>
+                <tr>
+                    <td>10月15日</td>
+                    <td>19:00-21:00</td>
+                    <td>城市文化中心A厅</td>
+                    <td>秋日诗韵</td>
+                    <td>24人</td>
+                </tr>
+                <tr>
+                    <td>11月12日</td>
+                    <td>19:00-21:00</td>
+                    <td>城市文化中心B厅</td>
+                    <td>月光下的诗篇</td>
+                    <td>18人</td>
+                </tr>
+                <tr>
+                    <td>12月10日</td>
+                    <td>19:00-21:00</td>
+                    <td>城市文化中心A厅</td>
+                    <td>冬日暖诗</td>
+                    <td>15人</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- 页面链接区 -->
+        <div>
+            <div class="links">
+                <a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red">查看往期活动照片</a>
+                <a href="job3.html" class="blue">在线咨询活动详情</a>
+            </div>
+        </div>
+        
+        <!-- 底部公告区 -->
+        <div class="notice">
+            <p>公告：10月份诗歌朗诵夜主题为"秋日诗韵"，欢迎大家准备与秋天相关的诗歌作品。<br>报名截止日期：10月10日</p>
+            <p>特别通知：下月将邀请著名诗人王明举办诗歌创作讲座，名额有限，请提前预约。<br>预约电话：123-4567-8901</p>
+            <p>温馨提示：活动现场提供茶点和饮品，为营造更好的氛围，建议参与者着装得体。<br>如有特殊需求，请提前与我们联系。</p>
+        </div>
+    </div>
+</body>
+</html>
